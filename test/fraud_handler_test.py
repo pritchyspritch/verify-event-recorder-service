@@ -16,7 +16,7 @@ S_INDEX = 'fraud-test-index'
 TODAY = str(datetime.now())
 LETTERS = string.ascii_lowercase
 RANDOM_STRING = ''.join(random.choice(LETTERS) for i in range(8))
-KEY = 'verify-fraud-events-{}-{}.log'.format(RANDOM_STRING, today)
+KEY = 'verify-fraud-events-{}-{}.log'.format(RANDOM_STRING, TODAY)
 
 
 @mock_s3
